@@ -11,41 +11,42 @@ const Service = () => {
       img: discovery,
       icon: <MdArrowOutward />,
       h1: "Discovery",
-      p: "to a solid foundation to create a creative  process that follows. We begin our  to create a creative  process that follows. We begin our journey with the discovery phase."
+      p: "We begin our journey with the discovery phase — laying the foundation for a creative and efficient process that follows."
     },
     {
       img: discovery,
       icon: <MdArrowOutward />,
       h1: "Strategy",
-      p: "to a solid foundation to create a creative  process that follows. We begin our journey with the discoverys that follows. We begin our journey with the discovery phase"
+      p: "A strategic approach helps us map out the direction and goals for your project, ensuring each step is purposeful and impactful."
     },
     {
       img: discovery,
       icon: <MdArrowOutward />,
       h1: "Design",
-      p: "Creating visually stunning and user-friendly designs to ensure strong engagement to a solid foundation to create a creative  process that follows."
+      p: "We craft visually compelling and user-focused designs to boost engagement and deliver memorable digital experiences."
     },
     {
       img: discovery,
       icon: <MdArrowOutward />,
       h1: "Development",
-      p: "Building responsive, scalable, and high-performing digital products for your needs. to a solid foundation to create a creative  process that follows. "
+      p: "Responsive, scalable, and high-performance digital products tailored precisely to your business needs."
     },
   ];
 
   return (
     <div className="flex flex-col bg-black">
+      
       {/* Image Section */}
       <div className="relative w-full mt-10">
-        <img src={white}  className="w-full object-cover" />
+        <img src={white} className="w-full object-cover" alt="White Background" />
 
         {/* Title */}
-        <p className="absolute top-12 md:top-12 left-60 transform -translate-x-1/2 text-center text-6xl md:text-5xl font-bold text-black">
+        <p className="absolute top-10 left-32 md:left-80 transform -translate-x-1/2 text-center text-4xl md:text-6xl font-bold text-black">
           OUR SERVICES
         </p>
 
-        {/* Video + Icon */}
-        <div className="absolute top-52 md:top-32 right-48 md:right-10 flex flex-row items-center">
+        {/* Video Button */}
+        <div className="absolute top-40 md:top-32 right-1/2 md:right-10 transform md:translate-x-0 translate-x-1/2 flex items-center">
           <div className="relative group w-20 h-20 rounded-full overflow-hidden">
             <video
               className="w-full h-full object-cover"
@@ -63,17 +64,20 @@ const Service = () => {
         </div>
       </div>
 
-    {/* map */}
-      <div className="absolute md:bg-white bg-black w-full px-12 md:px-12  grid grid-cols-1 md:grid-cols-2 gap-8 mt-[385px] md:mt-80 mb-10 md:mb-0">
+      {/* Services Grid */}
+      <div className="absolute mt-72 bg-black w-full px-4 md:px-12 py-16  grid grid-cols-1 sm:grid-cols-2 gap-10">
         {div.map((item, index) => (
-          <div key={index} className=" h-54 bg-gray-100 p-6 rounded-lg flex items-start  shadow hover:shadow-lg transition-shadow duration-300 ">
+          <div
+            key={index}
+            className="bg-gray-100 p-6 rounded-lg flex items-start  shadow hover:shadow-lg transition duration-300"
+          >
             <img src={item.img} alt={`service-${index}`} className="w-14 h-14 object-contain" />
-            <span className="rounded-full p-5 border border-gray-400 hover:bg-black hover:text-white transition duration-300">
-              {item.icon}
-            </span>
-            <div className="ml-4">
-              <h1 className="text-2xl font-semibold mb-1">{item.h1}</h1>
-              <p className="text-gray-700 text-base">{item.p}</p>
+            <div className="flex flex-col gap-2">
+              <span className="self-start rounded-full p-3 border border-gray-400 hover:bg-black hover:text-white transition duration-300 text-xl">
+                {item.icon}
+              </span>
+              <h1 className="text-xl font-semibold">{item.h1}</h1>
+              <p className="text-gray-700 text-sm">{item.p}</p>
             </div>
           </div>
         ))}

@@ -30,13 +30,13 @@ const Intro = () => {
     <div className='text-white mt-40 md:mt-28 '>
       {/* Intro section */}
       <div className='flex flex-col md:flex-row justify-center items-center mt-24 md:mt-14 gap-8'>
-        <div className='w-1/2 md:w-1/3'>
-          <img src={img} alt="Intro" />
+        <div className=' w-1/2'>
+          <img src={img}  />
         </div>
         <div className='w-full md:w-2/3 pl-12'>
           <div className='flex flex-col items-center md:items-start gap-12'>
             <h1 className='text-3xl text-blue-400 font-sans font-medium'>WHO WE ARE</h1>
-            <p className='w-[100] md:w-[600px] text-xl font-sans'>
+            <p className='w-[300] md:w-[600px] text-xl font-sans'>
               We are passionate creators driven by design, innovation, and code. I'm a developer dedicated to building clean, modern, and user-focused digital experiences. We are passionate creators driven by design, innovation, and code. I'm a developer dedicated to building clean, modern, and user-focused digital experiences.
             </p>
             <img src={founder} alt="Founder" className='w-[150px]' />
