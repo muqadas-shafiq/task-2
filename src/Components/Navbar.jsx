@@ -56,7 +56,7 @@ const Navbar = () => {
         </ul>
 
         {/* Contact Button */}
-        <div className="hidden md:flex bg-white rounded-full px-10 py-2 cursor-pointer flex-row gap-2">
+        <div className="hidden md:flex bg-white rounded-full px-4 py-1 cursor-pointer flex-row gap-2">
   <p className="text-black font-medium pt-1">CONTACT US</p>
   <div className="bg-red-600 text-blue-500 rounded-full p-2">
     <MdOutlineLaptopMac className="text-xl" />
