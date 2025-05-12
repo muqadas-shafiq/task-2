@@ -35,18 +35,17 @@ const Service = () => {
 
   return (
     <div className="flex flex-col bg-black">
-      
-      {/* Image Section */}
+      {/* Header Section */}
       <div className="relative w-full mt-10">
         <img src={white} className="w-full object-cover" alt="White Background" />
 
         {/* Title */}
-        <p className="absolute top-10 left-32 md:left-80 transform -translate-x-1/2 text-center text-4xl md:text-6xl font-bold text-black">
+        <p className="absolute top-6 left-32 md:left-80 transform -translate-x-1/2 text-center text-4xl md:text-6xl font-bold text-black">
           OUR SERVICES
         </p>
 
         {/* Video Button */}
-        <div className="absolute top-40 md:top-32 right-1/2 md:right-10 transform md:translate-x-0 translate-x-1/2 flex items-center">
+        <div className="absolute top-30 md:top-32 right-1/2 md:right-10 transform md:translate-x-0 translate-x-1/2 flex items-center">
           <div className="relative group w-20 h-20 rounded-full overflow-hidden">
             <video
               className="w-full h-full object-cover"
@@ -65,20 +64,23 @@ const Service = () => {
       </div>
 
       {/* Services Grid */}
-      <div className="absolute mt-72 md:bg-white bg-black w-full px-4 md:px-12 py-16  grid grid-cols-1 sm:grid-cols-2 gap-10">
+      <div className="absolute mt-64 md:mt-72 md:bg-white bg-black w-full px-4 md:px-12 py-4 md:py-16  grid grid-cols-1 sm:grid-cols-2 gap-10">
         {div.map((item, index) => (
           <div
             key={index}
-            className="bg-gray-100 p-6 rounded-lg flex items-start  shadow hover:shadow-lg transition duration-300"
+            className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
           >
-            <img src={item.img} alt={`service-${index}`} className="w-14 h-14 object-contain" />
-            <div className="flex flex-col gap-2">
-              <span className="self-start rounded-full p-3 border border-gray-400 hover:bg-black hover:text-white transition duration-300 text-xl">
+            {/* Image and Icon Row */}
+            <div className="flex items-center gap-4 mb-4">
+              <img src={item.img} alt={`service-${index}`} className="w-14 h-14 object-contain" />
+              <span className="rounded-full p-3 border border-gray-400 hover:bg-black hover:text-white transition duration-300 text-xl">
                 {item.icon}
               </span>
-              <h1 className="text-xl font-semibold">{item.h1}</h1>
-              <p className="text-gray-700 text-sm">{item.p}</p>
             </div>
+
+            {/* Title and Text */}
+            <h1 className="text-xl font-semibold mb-1">{item.h1}</h1>
+            <p className="text-gray-700 text-sm">{item.p}</p>
           </div>
         ))}
       </div>
