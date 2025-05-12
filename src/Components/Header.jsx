@@ -17,7 +17,7 @@ const Header = () => {
         </p>
 
         {/* Button Section */}
-        <div className="absolute bottom-12 md:bottom-8 left-1/2 transform -translate-x-1/2 flex items-center  px-4 py-2 rounded-full ">
+        <div className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 flex items-center  px-4 py-2 rounded-full ">
           <img src={curent}  className="p-4" />
           <button className="text-black font-semibold text-sm sm:text-base bg-yellow-500 rounded-full px-4 py-2">
             REQUEST PROPOSAL
