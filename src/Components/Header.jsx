@@ -17,12 +17,28 @@ const Header = () => {
         </p>
 
         {/* Button Section */}
-        <div className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 flex items-center  px-4 py-2 rounded-full ">
-          <img src={curent}  className="p-4" />
-          <button className="text-black font-semibold text-sm sm:text-base bg-yellow-500 rounded-full px-4 py-2">
-            REQUEST PROPOSAL
-          </button>
-        </div>
+        <div className="absolute bottom-2 md:bottom-8 left-1/2 transform -translate-x-1/2 w-full px-4 border-t-1 border-white pt-5">
+  <div className="max-w-6xl mx-auto flex flex-row items-center justify-between gap-2 md:gap-8">
+
+    {/* Left: Text Section */}
+    <div className="flex items-center rounded-full px-3 py-2 ">
+      <img src={curent} alt="icon" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
+      <button className="bg-yellow-500 text-black font-semibold text-sm sm:text-base rounded-full px-4 py-2 whitespace-nowrap">
+        REQUEST PROPOSAL
+      </button>
+    </div>
+
+    {/* Right: Image + Button */}
+    <div className="flex items-center  text-white text-base md:text-2xl font-medium">
+      <p>Of Design-Driven product developer</p>
+      <h1 className=" text-2xl md:text-4xl font-semibold">10Y</h1>
+    </div>
+
+  </div>
+</div>
+
+
+
       </div>
 
       {/* Video Section */}

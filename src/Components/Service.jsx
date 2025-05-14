@@ -4,6 +4,7 @@ import button from '../assets/button.mp4';
 import { FaCaretRight } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
 import discovery from '../assets/discovery.svg';
+import { FaArrowRight } from "react-icons/fa";
 
 const Service = () => {
   const div = [
@@ -83,7 +84,17 @@ const Service = () => {
             <p className="text-gray-700 text-sm">{item.p}</p>
           </div>
         ))}
+      
+
+<div className="flex items-center">
+  <button className="bg-blue-700 text-white font-semibold text-sm sm:text-base rounded-full px-4 py-2 whitespace-nowrap flex items-center gap-2">
+    <span>Read more</span>
+    <FaArrowRight className="w-4 h-4" />
+  </button>
+</div>
+
       </div>
+      
     </div>
   );
 };

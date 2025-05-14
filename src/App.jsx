@@ -3,6 +3,12 @@ import Navbar from './Components/Navbar'
 import Header from './Components/Header'
 import Intro from './Components/Intro'
 import Service from './Components/Service'
+import Chose from './Components/Chose'
+import Discuss from './Components/Discuss'
+import Benefit from './Components/Benefit'
+
+
+
 
 
 const App = () => {
@@ -12,6 +18,12 @@ const App = () => {
       <Header/>
       <Intro/>
       <Service/>
+      <Chose/>
+      <Discuss/>
+      <Benefit/>
+    
+      
+     
     </div>
   )
 }
