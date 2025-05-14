@@ -6,6 +6,7 @@ import Service from './Components/Service'
 import Chose from './Components/Chose'
 import Discuss from './Components/Discuss'
 import Benefit from './Components/Benefit'
+import Founder from './Components/Founder'
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
       <Service/>
       <Chose/>
       <Discuss/>
+      <Founder/>
       <Benefit/>
     
       
