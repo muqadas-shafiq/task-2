@@ -7,8 +7,7 @@ import Chose from './Components/Chose'
 import Discuss from './Components/Discuss'
 import Benefit from './Components/Benefit'
 import Founder from './Components/Founder'
-
-
+import Flow from './Components/Flow'
 
 
 
@@ -22,6 +21,8 @@ const App = () => {
       <Chose/>
       <Discuss/>
       <Founder/>
+      <Flow/>
+       <Discuss/>
       <Benefit/>
     
       
