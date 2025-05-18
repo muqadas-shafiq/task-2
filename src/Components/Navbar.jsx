@@ -7,6 +7,7 @@ import hide1 from '../assets/hide-1.avif';
 import { IoIosCall } from "react-icons/io";
 import { MdArrowOutward } from "react-icons/md";
 import { MdOutlineLaptopMac } from "react-icons/md";
+import 'animate.css';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,10 +50,10 @@ const Navbar = () => {
               Service
             </button>
           </li>
-          <li className="hover:text-yellow-500 cursor-pointer">Projects</li>
-          <li className="hover:text-yellow-500 cursor-pointer">Our Process</li>
-          <li className="hover:text-yellow-500 cursor-pointer">Our Blogs</li>
-          <li className="hover:text-yellow-500 cursor-pointer">Open Source</li>
+          <li className="hover:text-yellow-500 cursor-pointer hover:animate__animated hover:animate-bounce ">Projects</li>
+          <li className="hover:text-yellow-500 cursor-pointer hover:animate__animated hover:animate-bounce">Our Process</li>
+          <li className="hover:text-yellow-500 cursor-pointer hover:animate__animated hover:animate-bounce">Our Blogs</li>
+          <li className="hover:text-yellow-500 cursor-pointer hover:animate__animated hover:animate-bounce">Open Source</li>
         </ul>
 
         {/* Contact Button */}

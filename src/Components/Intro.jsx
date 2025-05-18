@@ -31,7 +31,7 @@ const Intro = () => {
       {/* Intro section */}
       <div className='flex flex-col md:flex-row justify-center items-center mt-24 md:mt-14 gap-8'>
         <div className=' w-1/2'>
-          <img src={img}  />
+          <img src={img}  className='ml-5'/>
         </div>
         <div className='w-full md:w-2/3 pl-12'>
           <div className='flex flex-col items-center md:items-start gap-12'>

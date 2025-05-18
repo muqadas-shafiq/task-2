@@ -6,7 +6,7 @@ import phone2 from '../assets/phone2.jpg'
 const Flow = () => {
   return (
     <div className='text-white flex flex-col m-6 mx-8 gap-10'>
-<div className="flex flex-col md:flex-row  items-center gap-24 w-1/2 md:w-1/2 justify-between">
+<div className="flex flex-col md:flex-row  items-center gap-24 w-1/3 md:w-1/2 justify-between">
   
 <div className="flex items-center gap-2 bg-white border border-gray-200 px-5 py-2 rounded-full  cursor-pointer ">
   <span className="text-sm font-semibold text-gray-800">ARTICLES</span>

@@ -40,19 +40,19 @@ const Chose = () => {
         },
     ]
   return (
-    <div className='text-white flex flex-col items-center justify-center mt-10'>
+    <div className='text-white flex flex-col items-center justify-center mt-10 py-20'>
         <div className='flex flex-col items-center gap-4 '>
              <h1 className='text-3xl text-blue-400 font-sans font-medium'>WHY CHOOSE US</h1>
-             <p className='font-mediul'>Chose best IT SOL for unparallel experties, inovation and customer satisfaction contact us today.</p>
+             <p className='font-medium'>Chose best IT SOL for unparallel experties, inovation and customer satisfaction contact us today.</p>
         </div>
         {/* map */}
         
-        <div className='grid grid-cols-1  md:grid-cols-3 gap-6 mt-10 px-4'>
+        <div className='grid grid-cols-1  md:grid-cols-3 gap-8 mt-10 px-2  w-full'>
   {user.map((items, index) => (
-    <div key={index} className=" p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
+    <div key={index} className=" py-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
       <div className="text-5xl text-blue-400 mb-4">{items.icon}</div>
       <h2 className="text-2xl font-semibold mb-2 font-serif">{items.h1}</h2>
-      <p className="text-sm text-gray-300 w-80">{items.p}</p>
+      <p className=" text-gray-300 w-80">{items.p}</p>
     </div>
   ))}
 </div>

@@ -41,7 +41,7 @@ const Service = () => {
         <img src={white} className="w-full object-cover" alt="White Background" />
 
         {/* Title */}
-        <p className="absolute top-6 left-32 md:left-80 transform -translate-x-1/2 text-center text-4xl md:text-6xl font-bold text-black">
+        <p className="absolute top-6 left-32 md:left-64 transform -translate-x-1/2 text-center text-4xl md:text-6xl font-bold text-black">
           OUR SERVICES
         </p>
 
@@ -64,14 +64,14 @@ const Service = () => {
         </div>
       </div>
 
-      {/* Services Grid */}
+      {/* Services */}
       <div className="absolute mt-60 md:mt-72 md:bg-white bg-black w-full px-4 md:px-12 py-4 md:py-16  grid grid-cols-1 sm:grid-cols-2 gap-10">
         {div.map((item, index) => (
           <div
             key={index}
             className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
           >
-            {/* Image and Icon Row */}
+            {/* Image*/}
             <div className="flex items-center gap-4 mb-4">
               <img src={item.img} alt={`service-${index}`} className="w-14 h-14 object-contain" />
               <span className="rounded-full p-3 border border-gray-400 hover:bg-black hover:text-white transition duration-300 text-xl">
@@ -81,7 +81,7 @@ const Service = () => {
 
             {/* Title and Text */}
             <h1 className="text-xl font-semibold mb-1">{item.h1}</h1>
-            <p className="text-gray-700 text-sm">{item.p}</p>
+            <p className="text-gray-700 ">{item.p}</p>
           </div>
         ))}
       

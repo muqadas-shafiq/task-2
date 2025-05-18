@@ -20,7 +20,7 @@ const Founder = () => {
                   <div className="absolute md:top-96 top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-start p-4  rounded-md ml-5">
                     <div className="text-white flex flex-col items-start justify-center gap-2">
                     <p className='text-6xl font-bold'>4.5</p>
-                      <p className="text-2xl  w-44">
+                      <p className="text-2xl  w-56">
                         Clutch average based on 80+. Reviews all chances yoy will be impressed too.
                       </p>
                     </div>

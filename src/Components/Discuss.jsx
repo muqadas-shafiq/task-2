@@ -4,7 +4,7 @@ import discus from '../assets/discus.webp';
 
 const Discuss = () => {
   return (
-    <div className="relative w-full h-screen text-white bg-blue-950 overflow-hidden flex items-center justify-center">
+    <div className="relative w-full h-screen text-white bg-blue-950 rounded-4xl  overflow-hidden flex items-center justify-center">
       {/* Background Image */}
       <img
         src={discus}  className=" object-cover w-[370px] md:w-1/2"
@@ -12,7 +12,7 @@ const Discuss = () => {
 
       {/* other content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 text-gray-900 ">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-4">Ready to discuss our project with us.</h1>
+        <h1 className="text-xl md:text-3xl font-bold mb-4">Ready to discuss our project with us.</h1>
         <p className=" text-xl max-w-xl mb-6">
           Let's talk about how to create a craft that not only looks great but drives real growth for your project.
         </p>
